@@ -65,30 +65,23 @@ public class Lab01 {
 	
 	
 	public static void problem4() {
-	
+
 		Scanner inKey = new Scanner(System.in);
-		int max = Integer.MAX_VALUE;
-		int min = Integer.MIN_VALUE;
-		int input = 1;
-		
+		int max = Integer.MIN_VALUE;
+		int min = Integer.MAX_VALUE;
+		int input = -1;
+
 		while (input != 0) {
 			System.out.println("Enter an integer: ");
 			input = inKey.nextInt();
-			
 			max = Math.max(max, input);
-			min = Math.max(min, input);
-			if (input == 0) {
-				break;
-				
-			}
-			
+			min = Math.min(min, input);
+
+		}
 			System.out.println("Max = " + max);
 			System.out.println("Min = " + min);
-			
-			
-		}
-	
-	
-		}
-	
-		}
+
+	}
+
+
+}
